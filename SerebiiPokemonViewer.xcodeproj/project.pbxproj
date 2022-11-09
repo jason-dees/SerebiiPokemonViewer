@@ -14,6 +14,10 @@
 		A31119F0290EEC14009378BB /* SerebiiPokemonViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31119EF290EEC14009378BB /* SerebiiPokemonViewerTests.swift */; };
 		A31119FA290EEC14009378BB /* SerebiiPokemonViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31119F9290EEC14009378BB /* SerebiiPokemonViewerUITests.swift */; };
 		A31119FC290EEC14009378BB /* SerebiiPokemonViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31119FB290EEC14009378BB /* SerebiiPokemonViewerUITestsLaunchTests.swift */; };
+		A3111A0A290EEC96009378BB /* GenerationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3111A09290EEC96009378BB /* GenerationData.swift */; };
+		A3111A0C290EF293009378BB /* GenerationData.json in Resources */ = {isa = PBXBuildFile; fileRef = A3111A0B290EED4C009378BB /* GenerationData.json */; };
+		A357C2712914AA640052137E /* GenerationDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357C2702914AA640052137E /* GenerationDataLoader.swift */; };
+		A357C273291999DA0052137E /* PokemonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357C272291999DA0052137E /* PokemonState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		A31119F5290EEC14009378BB /* SerebiiPokemonViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SerebiiPokemonViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31119F9290EEC14009378BB /* SerebiiPokemonViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerebiiPokemonViewerUITests.swift; sourceTree = "<group>"; };
 		A31119FB290EEC14009378BB /* SerebiiPokemonViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerebiiPokemonViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3111A09290EEC96009378BB /* GenerationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationData.swift; sourceTree = "<group>"; };
+		A3111A0B290EED4C009378BB /* GenerationData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = GenerationData.json; path = /Users/jasondees/Projects/SerebiiPokemonViewer/SerebiiPokemonViewer/GenerationData.json; sourceTree = "<absolute>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		A357C2702914AA640052137E /* GenerationDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationDataLoader.swift; sourceTree = "<group>"; };
+		A357C272291999DA0052137E /* PokemonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,8 @@
 		A31119D1290EEC13009378BB = {
 			isa = PBXGroup;
 			children = (
+				A357C26F2914AA290052137E /* Services */,
+				A3111A08290EEC80009378BB /* Models */,
 				A31119DC290EEC13009378BB /* SerebiiPokemonViewer */,
 				A31119EE290EEC14009378BB /* SerebiiPokemonViewerTests */,
 				A31119F8290EEC14009378BB /* SerebiiPokemonViewerUITests */,
@@ -98,6 +108,7 @@
 				A31119DD290EEC13009378BB /* SerebiiPokemonViewerApp.swift */,
 				A31119DF290EEC13009378BB /* ContentView.swift */,
 				A31119E1290EEC14009378BB /* Assets.xcassets */,
+				A3111A0B290EED4C009378BB /* GenerationData.json */,
 				A31119E3290EEC14009378BB /* SerebiiPokemonViewer.entitlements */,
 				A31119E4290EEC14009378BB /* Preview Content */,
 			);
@@ -127,6 +138,23 @@
 				A31119FB290EEC14009378BB /* SerebiiPokemonViewerUITestsLaunchTests.swift */,
 			);
 			path = SerebiiPokemonViewerUITests;
+			sourceTree = "<group>";
+		};
+		A3111A08290EEC80009378BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3111A09290EEC96009378BB /* GenerationData.swift */,
+				A357C272291999DA0052137E /* PokemonState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A357C26F2914AA290052137E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A357C2702914AA640052137E /* GenerationDataLoader.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +263,7 @@
 			files = (
 				A31119E6290EEC14009378BB /* Preview Assets.xcassets in Resources */,
 				A31119E2290EEC14009378BB /* Assets.xcassets in Resources */,
+				A3111A0C290EF293009378BB /* GenerationData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A357C273291999DA0052137E /* PokemonState.swift in Sources */,
 				A31119E0290EEC13009378BB /* ContentView.swift in Sources */,
+				A3111A0A290EEC96009378BB /* GenerationData.swift in Sources */,
+				A357C2712914AA640052137E /* GenerationDataLoader.swift in Sources */,
 				A31119DE290EEC13009378BB /* SerebiiPokemonViewerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
